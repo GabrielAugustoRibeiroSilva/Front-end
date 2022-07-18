@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("imagens/bck-body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  background-color: rgba(20, 20, 20, 0.2);
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.1px solid black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#logo {
+  cursor: pointer;
+  letter-spacing: 10px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+li > a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  transition: all 1.3s ease;
+}
+
+li > a:hover::before {
+  width: 100%;
+}
+
+#ttl {
+  position: absolute;
+  margin-top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 40px;
+}
+
+#ico-cat {
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+}
+
+.content {
+  width: 500px;
+  height: 200px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  position: absolute;
+  left: 60px;
+  top: 360px;
+}
+
+.content > p,
+#des {
+  border-left: 4px solid rgb(88, 32, 141);
+  padding-left: 20px;
+}
+
+.content > #des {
+  padding-bottom: 10px;
+}
+
+button > a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+
+button {
+  border: 1px solid rgb(88, 32, 141);
+  background-color: transparent;
+  margin-left: 370px;
+  margin-top: 35px;
+  border-radius: 25px;
+  padding: 7px 4px;
+}
+
+button:hover {
+  transition: 0.6s;
+  background-color: rgba(88, 32, 141, 0.315);
+  box-shadow: 0px 0px 20px rgba(88, 32, 141, 0.589);
+}
+
+@media (min-width: 1400px) {
+  #tll {
+    margin-top: 185px;
+  }
+
+  #ico-cat {
+    margin-top: 70px;
+  }
+
+  .content {
+    margin-top: 440px;
+  }
+}
+
+@media (max-width: 750px) and (max-height: 420px) {
+  body {
+    background-image: url("imagens/bck-body.jpg");
+    width: 100%;
+    height: 800px;
+  }
+}

@@ -1,0 +1,66 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 320px;
+  height: 100vh;
+  position: absolute;
+  left: -320px;
+  transition: all 0.5s ease-in-out;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ nav {
+  transform: translateX(320px);
+}
+ul {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.877);
+  text-align: center;
+  padding: 45px;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.323);
+}
+
+img {
+  width: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+/*  Dragão logo */
+#dragon {
+  top: 86vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Fantasma */
+#ghost {
+  width: 100px;
+  left: 350px;
+  top: 0px;
+  cursor: none;
+  animation: animaGhost 3s ease-in-out infinite alternate;
+}
+@keyframes animaGhost {
+  to {
+    transform: translateY(30px);
+  }
+}

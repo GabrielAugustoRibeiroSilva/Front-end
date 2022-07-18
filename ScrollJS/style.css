@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* Corpo da página */
+body {
+  background-color: rgba(6, 6, 15, 0.903);
+  color: white;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  background-color: black;
+  font-family: "Questrial", sans-serif;
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  gap: 45px;
+  font-size: 1.8rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Conteúdo */
+main {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15pt;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+h1 {
+  text-align: center;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
+section {
+  width: 100%;
+  margin-top: 100px;
+}
+h2 {
+  border-left: 3px solid rgb(53, 228, 0);
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+p {
+  margin-bottom: 30px;
+  font-family: "IBM Plex Mono", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: #b0b2b3;
+}
+
+/* Buttons-Sections */
+button {
+  background-color: rgb(53, 228, 0);
+  font-family: sans-serif;
+  font-weight: 700;
+  border: none;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+button:hover {
+  animation: escala 0.7s ease-in-out infinite;
+}
+@keyframes escala {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
